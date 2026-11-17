@@ -268,7 +268,7 @@
     // Poster: best available YouTube frame; the title plate stays if no image loads.
     var img = new Image();
     img.alt = '';
-    img.loading = 'lazy';
+   
     img.onload = function () {
       if (img.naturalWidth <= 120 && img.src.indexOf('maxresdefault') !== -1) {
         img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
